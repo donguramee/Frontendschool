@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap");
+body {
+  color: red;
+}
+h1,
+h2 {
+  font-weight: normal;
+}
+h1 {
+  color: inherit;
+  font-family: "Black Han Sans", sans-serif;
+}
+strong {
+  border-bottom: 5px solid currentColor;
+}
+
+h2 {
+  color: #999;
+  font-family: "Bagel Fat One", cursive;
+}

@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;700&display=swap");
+
+body {
+  position: relative;
+}
+.img {
+  opacity: 90%;
+  z-index: 1;
+  position: absolute;
+}
+.img:hover {
+  filter: blur(1px);
+  transition: 0.1s;
+  opacity: 90%;
+}
+.all {
+  top: 60px;
+}
+p {
+  display: block;
+  opacity: 95%;
+  font-family: "Noto Serif KR", serif;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-shadow: 1px, 1px, 1px black;
+  text-align: left;
+  z-index: 2;
+  margin: 20px;
+}
+p.text {
+  margin-top: 20px;
+
+  font-size: 18px;
+}
+p.muhamad {
+  font-family: "Noto Serif KR", serif;
+  font-size: 12px;
+  top: 70px;
+}
