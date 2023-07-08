@@ -1,0 +1,71 @@
+p {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+  font-family: "Belanosima", sans-serif;
+}
+/* 1번째 */
+.container {
+  position: relative;
+  margin: 50px;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000;
+  background-color: #343f50;
+}
+
+.box {
+  width: 198px;
+  height: 98px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #4a5568;
+  border-width: 2px 0 0 2px;
+}
+
+/* 2번째 */
+.container2 {
+  position: relative;
+  margin: 50px;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px dashed rgb(201, 155, 226);
+  border-radius: 50px;
+  background: linear-gradient(
+    38deg,
+    rgba(13, 213, 218, 1) 0%,
+    rgba(141, 77, 200, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background-clip: padding-box;
+}
+
+/* 3번째 */
+.container3 {
+  position: relative;
+  margin: 50px;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(189, 189, 189);
+  border-radius: 0px 50px 50px 50px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.3) 20px 19px 38px,
+    rgba(0, 0, 0, 0.22) 10px 15px 12px;
+}
+#last {
+  font-size: 20px;
+  color: rgb(78, 78, 78);
+  font-weight: 600;
+  font-family: "Belanosima", sans-serif;
+}
