@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>minitest</title>
+    <style>
+      body {
+        color: white;
+        font-size: 30px;
+      }
+      header,
+      div,
+      footer {
+        display: flex;
+      }
+      header {
+        background-color: salmon;
+        height: 100px;
+      }
+      div {
+        height: 500px;
+      }
+      div section {
+        background-color: skyblue;
+        flex-grow: 2;
+      }
+      div aside {
+        background-color: gold;
+        flex-grow: 1;
+      }
+      footer {
+        background-color: green;
+        height: 100px;
+      }
+
+      /* 중복되는 요소는 묶어서 사용 가능 */
+    </style>
+  </head>
+  <body>
+    <header class="box">header</header>
+    <div class="box">
+      <section class="box">section > article</section>
+      <aside class="box">aside</aside>
+    </div>
+    <footer class="box">footer</footer>
+  </body>
+</html>

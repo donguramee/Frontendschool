@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>minitest</title>
+    <style>
+      .container {
+        width: 500px;
+        height: 500px;
+        background-color: gray;
+        display: flex;
+        justify-content: space-between;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: salmon;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 30px;
+      }
+      .box:hover {
+        transform: scale(1.2);
+        transition: 0.5s;
+      }
+      .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .center {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .right {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+      }
+      /* 중복되는 요소는 묶어서 사용 가능 */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+      </div>
+      <div class="center">
+        <div class="box d">D</div>
+        <div class="box e">E</div>
+      </div>
+      <div class="right">
+        <div class="box f">F</div>
+        <div class="box g">G</div>
+        <div class="box h">H</div>
+      </div>
+    </div>
+  </body>
+</html>

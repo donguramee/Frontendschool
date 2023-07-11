@@ -1,0 +1,106 @@
+html {
+  margin: 100px;
+}
+.contain {
+  width: 350px;
+  height: 140px;
+  top: 30px;
+  left: 25px;
+  border-radius: 5px;
+  border: 1px solid #dbdbdb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contain p {
+  width: 215px;
+  height: 15px;
+  top: 19px;
+  left: 16px;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 318px;
+  height: 40px;
+  top: 50px;
+  left: 16px;
+  border-radius: 4px;
+  border: none;
+  background-color: #711bff;
+}
+.button-inner {
+  width: 102px;
+  height: 18px;
+  top: 60px;
+  left: 124px;
+}
+button img {
+  width: 64px;
+  height: 18px;
+  top: 60px;
+  left: 124px;
+}
+button span {
+  width: 34px;
+  height: 15px;
+  top: 63px;
+  left: 192px;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  color: #ffffff;
+}
+.id-psw {
+  display: flex;
+  align-items: center;
+
+  width: 133px;
+  height: 16px;
+  top: 106px;
+  left: 16px;
+}
+.id-psw img {
+  width: 16px;
+  height: 16px;
+  top: 106px;
+  left: 16px;
+  padding: 1.333333969116211px 2px 1.3333330154418945px 2px;
+}
+.id-psw span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 113px;
+  height: 15px;
+  top: 107px;
+  left: 36px;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.join {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 65px;
+  height: 16px;
+  top: 106px;
+  left: 269px;
+}

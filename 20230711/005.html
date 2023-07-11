@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+      body {
+        color: white;
+        font-size: 30px;
+      }
+      header {
+        background-color: salmon;
+        height: 100px;
+      }
+      section {
+        background-color: skyblue;
+        height: 300px;
+        float: left;
+        width: 80%;
+      }
+      aside {
+        background-color: gold;
+        height: 300px;
+      }
+      footer {
+        background-color: green;
+        height: 100px;
+      }
+      /* text가운데 정렬 */
+      header,
+      section,
+      aside,
+      footer,
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 5px solid #ddd;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="box">header</header>
+    <section class="box">section > article</section>
+    <aside class="box">aside</aside>
+    <footer class="box">footer</footer>
+  </body>
+</html>
