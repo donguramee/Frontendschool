@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>clamp()</title>
+    <style>
+      .px {
+        font-size: 20px;
+      }
+      .clamp {
+        font-size: clamp(20px, 2.5vw, 40px);
+        /* 1vw = 뷰포트 너비 * 0.01 */
+        /* 최소 20px 최대 40px */
+      }
+    </style>
+  </head>
+  <body>
+    <p class="px">안녕하세요.</p>
+    <p class="clamp">안녕하세요.</p>
+  </body>
+</html>

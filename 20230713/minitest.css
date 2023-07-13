@@ -1,0 +1,56 @@
+.btn {
+  width: 100px;
+  height: 50px;
+}
+
+.btn1 {
+  color: rgb(134, 134, 134);
+  background-color: #343f50;
+  border: 2px solid #1a202c;
+  box-shadow: inset 2px 2px 0px 0px #4a5568;
+}
+.btn1:hover {
+  color: white;
+  text-decoration: underline;
+}
+.btn1:active {
+  color: white;
+  text-decoration: underline;
+  box-shadow: inset 2px 2px 0px 0px #262f3e;
+}
+
+.btn2 {
+  color: #439aff;
+  background-color: rgb(81, 81, 81);
+  border: 2px solid black;
+}
+.btn2:hover {
+  color: white;
+  background-color: #439aff;
+  text-decoration: underline;
+  border: 2px solid #439aff;
+  box-shadow: inset 2px 2px 0px 0px #73b4ff;
+}
+.btn2:active {
+  color: white;
+  text-decoration: underline;
+  box-shadow: inset 2px 2px 0px 0px #3b78be;
+}
+
+.btn3 {
+  color: #eb5757;
+  background-color: rgb(81, 81, 81);
+  border: 2px solid black;
+}
+.btn3:hover {
+  color: white;
+  background-color: #eb5757;
+  text-decoration: underline;
+  border: 2px solid #eb5757;
+  box-shadow: inset 2px 2px 0px 0px #fd6f6f;
+}
+.btn3:active {
+  color: white;
+  text-decoration: underline;
+  box-shadow: inset 2px 2px 0px 0px #d94242;
+}
