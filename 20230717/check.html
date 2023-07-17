@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+      body {
+        margin: 0;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: grid;
+        gap: 10px;
+        /* 열방향 그리드 트랙의 최소 넓이를 50px, 최대 넓이를 150px로 합니다. */
+        grid-template-columns: repeat(3, minmax(50px, 150px));
+
+        /* 행방향 그리드 트랙의 최소 높이를 120px, 최대 높이를 가용할 수 있는 최대 크기로 합니다. */
+        grid-template-rows: repeat(3, minmax(120px, auto));
+      }
+
+      .container li {
+        background: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="container">
+      <!-- 컨텐츠를 추가합니다. -->
+      <li>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, in
+        reprehenderit provident explicabo dignissimos sequi perferendis quod
+        repellat, placeat iure cumque cum cupiditate nobis nostrum quae labore
+        unde assumenda blanditiis.
+      </li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+    </ul>
+  </body>
+</html>

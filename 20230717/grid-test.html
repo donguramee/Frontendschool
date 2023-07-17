@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>grid test</title>
+    <style>
+      body {
+        background-color: rgb(53, 53, 53);
+      }
+      .container {
+        display: grid;
+        margin: 100px auto;
+        width: 400px;
+        height: 700px;
+        grid-template-areas: "a a b" "c d b" "e f f"; /* 그리드 내부의 가로세로 배치 */
+        grid-template-columns: 2fr 1fr 2fr; /* 가로의 3가지 항목에 대한 비율 2:1:2 */
+        grid-template-rows: 2fr 1fr 2fr; /* 세로의 3가지 항목에 대한 비율 */
+        gap: 10px;
+      }
+      p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 20px;
+        font-family: "Belanosima", sans-serif;
+      }
+      .item {
+        /* 박스 내부의 글자의 위치 조절 및 컨트롤 */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 30px;
+        object-fit: cover;
+        overflow: hidden;
+      }
+      .item:hover {
+        transform: scale(1.2);
+        transition: 0.5s;
+      }
+      section p:last-child {
+        font-size: 10;
+        font-family: "Smooch Sans", sans-serif;
+        margin-top: 15px;
+      }
+      .container div:nth-child(1) {
+        background-image: url();
+        grid-area: a;
+      }
+      .container div:nth-child(2) {
+        grid-area: b;
+      }
+      .container div:nth-child(3) {
+        background-image: url();
+        grid-area: c;
+      }
+      .container div:nth-child(4) {
+        background-image: url();
+        grid-area: d;
+      }
+      .container div:nth-child(5) {
+        background-image: url();
+        grid-area: e;
+      }
+      .container div:nth-child(6) {
+        background-image: url();
+        grid-area: f;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section>
+        <p>The edit. Dongurame</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut fugiat at
+          distinctio et, facere autem quasi ea enim rem maiores molestiae a est,
+          repellendus molestias beatae nihil, sint necessitatibus. Magni.
+        </p>
+      </section>
+      <div class="item">
+        <img
+          src="https://images.unsplash.com/photo-1663362464067-f3e1280a9798?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=644&q=80"
+          alt=""
+        />
+      </div>
+      <div class="item">
+        <img
+          src="https://images.unsplash.com/photo-1687217914134-3cd71ed455fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+          alt=""
+        />
+      </div>
+      <div class="item">
+        <img
+          src="https://images.unsplash.com/photo-1674816568560-e5a11db85f58?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+          alt=""
+        />
+      </div>
+      <div class="item">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1675365666449-26f094ebae43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80"
+          alt=""
+        />
+      </div>
+      <div class="item">
+        <img
+          src="https://images.unsplash.com/photo-1689157611532-5cc61e96cc0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+          alt=""
+        />
+      </div>
+      <div class="item">
+        <img
+          src="https://images.unsplash.com/photo-1689464090276-50bed9a6798f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>
