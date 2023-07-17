@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid test</title>
+    <style>
+      .container {
+        display: grid;
+        width: 800px;
+        height: 800px;
+        grid-area: "blue blue blue yellow yellow" "blue blue blue yellow yellow"
+          "violet violet salmon yellow yellow" "salmon salmon green green green"
+          "salmon salmon green green green";
+        gap: 10px;
+      }
+      .blue {
+        grid-area: blue;
+      }
+
+      .green {
+        grid-area: green;
+      }
+      .yellow {
+        grid-area: yellow;
+      }
+      .orange {
+        grid-area: orange;
+      }
+      .violet {
+        grid-area: violet;
+      }
+      .salmon {
+        grid-area: salmon;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="blue">a</div>
+
+      <div class="green">b</div>
+
+      <div class="yellow">c</div>
+
+      <div class="orange">d</div>
+
+      <div class="violet">e</div>
+
+      <div class="salmon">f</div>
+    </div>
+  </body>
+</html>
