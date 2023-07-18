@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation</title>
+    <style>
+      .box {
+        color: white;
+        width: 100px;
+        height: 100px;
+        background-color: gold;
+        animation: change 1s linear infinite;
+      }
+      @keyframes change {
+        from {
+          scale: 0;
+          background-color: royalblue;
+        }
+
+        /* 50% 시점의 변화 */
+        /* 50% {
+          scale: 0.2;
+          background-color: gold; */
+      }
+      to {
+        scale: 1.2;
+        background-color: seagreen;
+      }
+      /* 라이캣 */
+      .licat {
+        width: 168px;
+        height: 200px;
+        border: 4px solid black;
+        background: url(./img/keyframes-licat.png) no-repeat 0 0 / auto 100%;
+        /* 애니메이션 키프레임과 연결 */
+        animation: move-licat 0.8s infinite steps(6);
+        /* 펼쳐보기
+        animation-name: move-licat;
+        animation-duration: 0.8s;
+        animation-iteration-count: infinite;
+        animation-timing-function: steps(6); */
+      }
+      /* hover시 멈춤 */
+      .licat:hover {
+        animation-play-state: paused;
+      }
+
+      @keyframes move-licat {
+        /* from은 생략 */
+        to {
+          background-position: right 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="licat"></div>
+    <!-- <div class="box">box</div> -->
+  </body>
+</html>
