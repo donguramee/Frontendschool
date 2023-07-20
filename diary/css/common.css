@@ -61,6 +61,22 @@ body {
   width: 156px;
 }
 
+/* index.html  */
+.header .login-text {
+  display: flex;
+  gap: 8px;
+}
+.header .login-text p::after {
+  content: "|";
+  color: #d8ddde;
+  margin-left: 24px;
+}
+
+.header .login-text p strong {
+  font-family: "Pretendard-Bold";
+  box-shadow: inset 0 -0.5em 0 rgba(255, 79, 110, 0.8);
+}
+
 /* footer */
 .footer {
   text-align: center;
@@ -69,16 +85,21 @@ body {
 }
 
 /* 버튼 */
-.btn-join {
+[class^="btn"] {
   display: inline-flex;
   height: 40px;
   padding: 0 20px 0 52px;
   background-color: #fff;
-  background-image: url(../img/icon-join.svg);
   background-repeat: no-repeat;
   background-size: 32px;
   background-position: 10px 50%;
   align-items: center;
+}
+.btn-join {
+  background-image: url(../img/icon-join.svg);
+}
+.btn-logout {
+  background-image: url(../img/icon-join.svg);
 }
 
 /* 로그인 */
@@ -90,11 +111,28 @@ body {
   margin: auto;
   text-align: center;
 }
-.main-title img {
+.main-title svg {
   display: block;
   width: 100%;
   margin-bottom: 30px;
+  position: relative;
 }
+.svg-heart {
+  stroke: transparent;
+  stroke-width: 0;
+  transform-origin: 50% 20px;
+  scale: 0.8;
+  animation: heart 0.5s cubic-bezier(0.69, 1.08, 0.74, 0.35) infinite alternate;
+}
+
+@keyframes heart {
+  100% {
+    stroke: #ffc7d1;
+    stroke-width: 2px;
+    scale: 2.5;
+  }
+}
+
 .main-title strong {
   color: #29363d;
   font-size: 24px;
