@@ -1,0 +1,24 @@
+.wrapper {
+  background-color: aquamarine;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrapper a {
+  background-color: orangered;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  vertical-align: bottom;
+}
+.wrapper a.bronze {
+  background-color: burlywood;
+}
+.wrapper a.silver {
+  background-color: silver;
+  height: 400px;
+}
+.wrapper a.gold {
+  background-color: gold;
+  height: 100px;
+}
