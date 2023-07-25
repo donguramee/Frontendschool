@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+      .txt-hide {
+        overflow: hidden;
+        width: 1;
+        height: 1;
+        /* 1px를 남기는 이유는 스크린 리더가 읽을 수 없어 접근성에서 좋지 않음 */
+        clip-path: inset(50%);
+      }
+      .label-hold {
+        position: relative;
+      }
+      .label-hold::before {
+        display: inline-block;
+        content: "";
+        width: 22px;
+        height: 22px;
+        margin-right: 10px;
+        border: 1px solid black;
+        vertical-align: -5px;
+      }
+      .label-hold::after {
+        content: "";
+        position: absolute;
+        top: -3px;
+        left: 20px;
+
+        width: 22px;
+        height: 22px;
+        background-image: url(./img/checkmark.png);
+        background-size: 22px;
+        background-repeat: no-repeat;
+        opacity: 0;
+        transition: 0.5s;
+      }
+      .inpHold:focus-visible + .label-hold::before {
+        outline: 2px solid teal;
+        outline-offset: 3px;
+      }
+      .inpHold:checked + .label-hold::after {
+        left: 1px;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <input id="inpHold" type="checkbox" class="inpHold txt-hide" />
+    <label for="inpHold" class="label-hold">로그인 상태 유지</label>
+  </body>
+</html>

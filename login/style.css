@@ -1,0 +1,157 @@
+button {
+  cursor: pointer;
+}
+html {
+  background-color: #e5e5e5;
+}
+ul {
+  list-style: none;
+}
+.wrapper {
+  width: 520px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #c4c4c4;
+  background: #fff;
+  position: relative;
+}
+
+/* header */
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #c4c4c4;
+  width: 520px;
+  margin-bottom: 2px;
+}
+header p {
+  color: #000;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 20px 188px 18px;
+  text-align: center;
+  top: 2px;
+}
+.icon-x {
+  position: absolute;
+  margin-left: 480px;
+  /* margin-right: 24px; */
+}
+
+/* main */
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 24px;
+}
+h1 {
+  display: flex;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  margin: 24px 0;
+}
+.input input {
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #c4c4c4;
+  background: #fff;
+  margin: 0;
+  padding: 15px 309px 15px 16px;
+}
+.id {
+  color: #f4492e;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  margin: 6px 0px 6px 2px;
+}
+.inpText {
+  border-radius: 5px;
+  border: 1px solid #c4c4c4;
+  background: #fff;
+}
+
+.or {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.or span {
+  color: #767676;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 13px;
+}
+.underline {
+  width: 210px;
+  height: 1px;
+  flex-shrink: 0;
+  background: #c4c4c4;
+}
+
+/* footer */
+footer {
+  margin-bottom: 25px;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 24px;
+}
+footer a {
+  text-decoration: none;
+  color: #767676;
+  text-align: center;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto;
+}
+
+.button {
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: 12px 11px;
+}
+.google {
+  background-image: url(./img/Google__G__Logo\ 1.png);
+  border: 1px solid #767676;
+}
+.facebook {
+  background-image: url(./img/facebook.png);
+  border: 1px solid #2d9cdb;
+}
+.naver {
+  background-image: url(./img/naver-logo.png);
+
+  border: 1px solid #00bf18;
+}
+.kakao {
+  background-image: url(./img/message-circle.png);
+  border: 1px solid #f2c94c;
+}
