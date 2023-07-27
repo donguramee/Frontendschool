@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>이지현</title>
+    <style>
+      /* width */
+      ::-webkit-scrollbar {
+        height: 10px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: rgb(131, 58, 180);
+        background: linear-gradient(
+          90deg,
+          rgba(131, 58, 180, 1) 53%,
+          rgba(255, 125, 125, 1) 100%
+        );
+        border-radius: 5px;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="flex h-[300px] fixed top-0 right-0 left-0 m-auto z-50">
+      <div
+        class="wrap group flex m-auto w-[180px] hover:w-[1200px] rounded-[150px] bg-white drop-shadow-lg transition-all duration-100"
+      >
+        <div
+          class="bg-[url('./my.jpg')] bg-center bg-cover w-[180px] h-[180px] rounded-full flex justify-center items-center relative"
+        >
+          <h1 class="absolute z-[-1]">이지현</h1>
+          <div
+            class="animate-bounce bg-gradient-to-r from-violet-500 to-fuchsia-500 drop-shadow-lg w-[40px] h-[40px] self-end ml-auto rounded-full"
+          ></div>
+        </div>
+        <nav
+          class="m-auto basis-3/4 opacity-0 -translate-x-[30px] group-hover:opacity-100 group-hover:-translate-x-[-60px] transition-all absolute group-hover:static"
+        >
+          <ul class="flex">
+            <li class="p-0 group-hover:px-[30px] transition-all">
+              <a
+                href="#section1"
+                class="hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white p-8 rounded-full"
+                >소개</a
+              >
+            </li>
+            <li class="p-0 group-hover:px-[30px] transition-all duration-1000">
+              <a
+                href="#section2"
+                class="hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white p-8 rounded-full"
+                >성장</a
+              >
+            </li>
+            <li
+              class="p-0 group-hover:px-[30px] transition-all duration-1000 delay-200"
+            >
+              <a
+                href="#section3"
+                class="hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white p-8 rounded-full"
+                >기술</a
+              >
+            </li>
+            <li
+              class="p-0 group-hover:px-[30px] transition-all duration-1000 delay-300"
+            >
+              <a
+                href="#section4"
+                class="hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white p-8 rounded-full"
+                >프로젝트</a
+              >
+            </li>
+            <li
+              class="p-0 group-hover:px-[30px] transition-all duration-1000 delay-500"
+            >
+              <a
+                href="#section5"
+                class="hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white p-8 rounded-full"
+                >연락</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="h-[250px]"></div>
+    <main class="w-[1200px] m-auto">
+      <div
+        class="wrap m-auto flex shrink-0 overflow-x-scroll transition-all snap-x h-full relative"
+      >
+        <section
+          id="section1"
+          class="rounded-3xl bg-white m-4 p-16 divide-y-[1px] divide-gray-300 min-w-full"
+        >
+          <h2 class="font-bold text-xl">소개</h2>
+          <div class="w-full mt-4 pt-4">
+            <p>안녕하세요! 프론트엔드 개발자 이지현입니다.</p>
+          </div>
+        </section>
+        <section
+          id="section2"
+          class="rounded-3xl bg-white m-4 p-16 divide-y-[1px] divide-gray-300 min-w-full"
+        >
+          <h2 class="font-bold text-xl">성장</h2>
+          <div class="w-full mt-4 pt-4"></div>
+        </section>
+        <section
+          id="section3"
+          class="rounded-3xl bg-white m-4 p-16 divide-y-[1px] divide-gray-300 min-w-full"
+        >
+          <h2 class="font-bold text-xl">기술</h2>
+          <div class="w-full mt-4 pt-4"></div>
+        </section>
+        <section
+          id="section4"
+          class="rounded-3xl bg-white m-4 p-16 divide-y-[1px] divide-gray-300 min-w-full"
+        >
+          <h2 class="font-bold text-xl">프로젝트</h2>
+          <div class="w-full mt-4 pt-4"></div>
+        </section>
+        <section
+          id="section5"
+          class="rounded-3xl bg-white m-4 p-16 divide-y-[1px] divide-gray-300 min-w-full"
+        >
+          <h2 class="font-bold text-xl">연락처</h2>
+          <div class="w-full mt-4 pt-4">
+            <a href="https://github.com/Sleepingoff" target="_blank"
+              >github ></a
+            >
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
