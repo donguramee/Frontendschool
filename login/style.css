@@ -23,18 +23,20 @@ a {
 }
 html,
 body {
-  height: 100%; /* 뷰포트 높이 설정 */
   margin: 0;
+  padding: 0;
+  height: 100%; /* 뷰포트 높이 설정 */
 }
+
 .wrapper {
   width: 520px;
   height: auto;
-  flex-shrink: 0;
   border-radius: 10px;
   border: 1px solid #c4c4c4;
   background: #fff;
-  position: relative;
   margin: auto;
+
+  position: relative;
 }
 
 /* header */
@@ -89,6 +91,9 @@ h1 {
   margin: 0;
   padding: 15px 309px 15px 16px;
 }
+.input:checked + input: {
+  border-color: #f4492e;
+}
 .id {
   color: #f4492e;
   font-family: Spoqa Han Sans Neo;
@@ -104,7 +109,69 @@ h1 {
   border: 1px solid #c4c4c4;
   background: #fff;
 }
+/* 체크박스 */
+/* input 체크박스는 보일 필요가 없으므로 */
 
+/* 체크가 되었을 때 그 이웃하는 .sidebar를 지정해서 side effect 방지 */
+/* .check {
+  width: 472px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 17px;
+  margin-bottom: 21px;
+}
+
+#chk {
+  display: none;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+} */
+
+/* .on-off {
+  margin-top: 2px;
+  margin-left: 4px;
+} */
+form {
+  margin: 16px 4px;
+}
+.circle {
+  display: inline-block; /* 영역적용가능해짐 */
+  width: 22px;
+  height: 22px;
+  border: 1px solid #666;
+  box-sizing: border-box;
+  border-radius: 10px; /* 모서리둥글게 처리 */
+  position: relative;
+  top: 5px;
+  cursor: pointer; /* 마우스 올렸을때 손모양 처리 */
+
+  background-image: url(https://blog.kakaocdn.net/dn/XTnSL/btrhtUIVtpB/5FungHN6IXVXG8bLbhE9Dk/img.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#chk:checked + .circle {
+  background-color: #2f80ed;
+  border-color: #2f80ed;
+  background-image: url(https://blog.kakaocdn.net/dn/t7a2D/btrhtVgLYmG/dUxzAkBy9hIZ4gHmyllQrk/img.png);
+}
+.text {
+  color: var(--767676, #767676);
+  font-family: Spoqa Han Sans Neo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 8px;
+}
+/* 체크박스는 display:none;을 주면 데이터 처리가 안됨 */
+#chk {
+  position: absolute;
+  left: -999em;
+}
 .or {
   display: flex;
   flex-direction: row;
@@ -129,8 +196,7 @@ h1 {
 }
 .loginbtn {
   height: 50px;
-
-  height: ;
+  margin-top: 4px;
   border-radius: 5px;
   background: #2f80ed;
   color: #fff;

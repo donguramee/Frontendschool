@@ -33,12 +33,18 @@
         <div class="input">
           <input type="text" placeholder="아이디" class="inpText" />
           <p class="id">아이디를 입력해 주세요.</p>
-          <input type="text" placeholder="비밀번호" class="inpText" />
+          <input type="password" placeholder="비밀번호" class="inpText" />
         </div>
-        <div class="check-box">
-          <!-- <input type="checkbox">로그인 상태 유지</input> -->
-          <!-- 체크박스 수정 -->
-        </div>
+
+        <form action="#">
+          <!--label태그는 체크박스를 누르지 않아도 연결된 체크박스를 체크해줌-->
+          <label for="chk">
+            <input type="checkbox" id="chk" />
+            <!--실제로는 글자를 기울이는 태그, 퍼블리셔들이 아이콘담을 때 많이 사용-->
+            <i class="circle"></i>
+            <span class="text">로그인 상태 유지</span>
+          </label>
+        </form>
         <button class="loginbtn" type="button">로그인</button>
         <div class="join-login">
           <a href="#">회원가입</a>
