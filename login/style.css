@@ -29,14 +29,16 @@ body {
 }
 
 .wrapper {
+  position: relative;
   width: 520px;
   height: auto;
   border-radius: 10px;
   border: 1px solid #c4c4c4;
   background: #fff;
-  margin: auto;
-
-  position: relative;
+  box-sizing: border-box;
+  margin-left: calc(50% - 260px);
+  /* position: absolute; */
+  margin-top: 100px;
 }
 
 /* header */
@@ -137,6 +139,7 @@ form {
   margin: 16px 4px;
 }
 .circle {
+  cursor: pointer; /* 마우스 올렸을때 손모양 처리 */
   display: inline-block; /* 영역적용가능해짐 */
   width: 22px;
   height: 22px;
@@ -145,7 +148,6 @@ form {
   border-radius: 10px; /* 모서리둥글게 처리 */
   position: relative;
   top: 5px;
-  cursor: pointer; /* 마우스 올렸을때 손모양 처리 */
 
   background-image: url(https://blog.kakaocdn.net/dn/XTnSL/btrhtUIVtpB/5FungHN6IXVXG8bLbhE9Dk/img.png);
   background-size: 50%;
@@ -166,6 +168,7 @@ form {
   font-weight: 500;
   line-height: normal;
   margin-left: 8px;
+  cursor: pointer; /* 마우스 올렸을때 손모양 처리 */
 }
 /* 체크박스는 display:none;을 주면 데이터 처리가 안됨 */
 #chk {
@@ -186,7 +189,7 @@ form {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin: 0 13px;
+  margin: 0 12px;
 }
 .underline {
   width: 210px;
