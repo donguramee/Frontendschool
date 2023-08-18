@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <script>
+      function xhrRequest() {
+        const requestObj = new XMLHttpRequest(); //통신객체
+        requestObj.open("GET", "hero.json"); //데이터를 받아오기
+        requestObj.send(); //받은 데이터를 내보내기
+        requestObj.onreadystatechange = () => {
+          //데이터의 상태가 변하면 바꿔주기
+          //   console.log(requestObj.responseText);
+          if (requestObj.readyState === 4 && requestObj.status === 200) {
+            jsonObj = JSON.parse(requestObj.responseText);
+          }
+        };
+        // console.log(jsonObj);
+        // JSON.parse(jsonObj);
+      }
+      xhrRequest();
+
+      //이렇게 진행되는구나 만 알고있으면됨
+    </script>
+  </body>
+</html>
