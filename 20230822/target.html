@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../reset.css" />
-    <style></style>
   </head>
 
   <body>
@@ -20,12 +18,24 @@
 
     <script>
       const parent = document.querySelector(".parent");
-      parent.addEventListener("click", function (event) {
-        console.log(event.target);
-        if (event.target.nodeName === "BUTTON") {
-          event.target.innerHTML = "버튼4";
+      parent.addEventListener("click", (event) => {
+        console.log(this);
+        console.log(event.currentTarget);
+
+        // 이벤트가 발생한 대상을 조건식으로 특정하기
+        if (event.target.nodeName === "LI") {
+          event.target.textContent = "hello";
         }
       });
+
+      myObj = {
+        name: "jaehyun",
+        walk() {
+          parent.addEventListener("click", () => {
+            console.log(this.name, " is walking");
+          });
+        },
+      };
     </script>
   </body>
 </html>
