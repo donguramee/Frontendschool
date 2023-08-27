@@ -1,0 +1,11 @@
+nav {
+  background-image: url("assets/img/background.png");
+}
+
+.home {
+  background: url("assets/img/icon_font_awesome_home.png");
+}
+
+.title {
+  border-bottom: 1px solid black;
+}/*# sourceMappingURL=011_변수.css.map */
