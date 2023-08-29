@@ -23,7 +23,12 @@ img {
 
 body {
   min-height: 100vh;
-  background: linear-gradient(45deg, rgb(254, 232, 108), rgb(132, 241, 188));
+  background: rgb(111, 211, 255);
+  background: linear-gradient(
+    199deg,
+    rgba(111, 211, 255, 1) 0%,
+    rgba(170, 111, 224, 1) 100%
+  );
 
   display: flex;
   align-items: center;
@@ -39,7 +44,7 @@ body {
 h1 {
   font-weight: normal;
   font-family: "Neonderthaw", cursive;
-  color: green;
+  color: rgb(255, 255, 255);
   width: min-content;
   line-height: 0.7;
   font-size: 160px;
@@ -75,7 +80,19 @@ section {
   aspect-ratio: 1;
   object-fit: cover;
   border-radius: 50%;
+
+  /* 이미지 개별 drag가 안되도록 */
+  pointer-events: none;
 }
 .drag-item ~ li {
   margin-top: 10px;
+}
+
+/* dragging */
+.drag-item.dragging {
+  border: 1px dashed #ccc;
+  background-color: #f5f5f5;
+}
+.drag-item.dragging > * {
+  opacity: 0.2;
 }
