@@ -180,6 +180,9 @@ button {
   border: none;
   font-family: GmarketSansBold;
 }
+button:hover {
+  cursor: pointer;
+}
 
 .a11y {
   position: absolute;
