@@ -1,10 +1,12 @@
 import { useState, useMemo } from "react";
 
 function 부하() {
+  // console.time();
   let s = 0;
   for (let i = 0; i < 1000000000; i++) {
     s += i;
   }
+  // console.timeEnd();
   return s;
 }
 
@@ -30,6 +32,7 @@ function App() {
     <div>
       <h1>계산 결과 : {result}</h1>
       <div>{count}</div>
+      <div>{countTwo}</div>
       <button onClick={handleCountUp}>UP!</button>
       <button onClick={handleCountUpTwo}>UP2!</button>
     </div>
