@@ -1,0 +1,72 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input />
+    <button>todo추가</button>
+    <div id="todo"></div>
+    <script>
+      const $button = document.querySelector("button");
+      // 텍스트를 입력받아서 서버로 요청을보내는 함수!
+      const createTodo = (todoText) => {
+        fetch("http://localhost:3000/todos", {
+          method: "POST",
+          headers: {
+            "Content-type": "application/json",
+          },
+          body: JSON.stringify({
+            todo: todoText,
+          }),
+        })
+          .then((data) => data.json())
+          .then((json) => {
+            console.log(json);
+            // post요청이 끝나고 새로 todolist를 가져오자.
+            getTodoList();
+          });
+      };
+      const getTodoList = () => {
+        fetch("http://localhost:3000/todos")
+          .then((data) => data.json())
+          .then((json) => {
+            document.querySelector("#todo").innerHTML = "";
+            json.forEach((todo) => {
+              const $li = document.createElement("li");
+              $li.innerText = todo.todo;
+
+              const $deleteButton = document.createElement("button");
+              $deleteButton.addEventListener("click", () =>
+                deleteTodo(todo.id)
+              );
+              $deleteButton.innerText = todo.id + "삭제";
+              document.querySelector("#todo").append($li, $deleteButton);
+            });
+          });
+      };
+      const inputTodo = () => {
+        // 인풋요소에서 값을 가져온다.
+        const todoText = document.querySelector("input").value;
+        // 가져온 값을 createTodo에 넘겨준다!
+        createTodo(todoText);
+      };
+      const deleteTodo = (id) => {
+        console.log(id);
+        fetch("http://localhost:3000/todos/" + id, {
+          method: "DELETE",
+        })
+          .then((data) => data.json())
+          .then((json) => {
+            getTodoList();
+          });
+      };
+      $button.addEventListener("click", inputTodo);
+
+      getTodoList();
+    </script>
+  </body>
+</html>
