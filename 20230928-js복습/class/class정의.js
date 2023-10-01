@@ -15,3 +15,6 @@ player.sayWinner = function() {
 }
 
 player.sayWinner()
+
+// Ladies and gentlemen, Champion is choi 출력
+
